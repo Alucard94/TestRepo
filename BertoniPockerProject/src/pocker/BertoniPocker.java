@@ -85,7 +85,7 @@ public class BertoniPocker implements ExecuteProgram{
 	// If hand1 beats hand2 then hand1's score is greater than hand2's score.
 	// If there is a draw between hand1 and hand2 then the scores for both are the same.
 	// The probability of win is based on 100% minus the probability of get a given hand.
-	private static int getScore(Card[] hand) {
+	public static int getScore(Card[] hand) {
 		if (hand.length != 5)
 			throw new IllegalArgumentException();
 		
